@@ -1,0 +1,126 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AKA Theatre</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+	<div id="wrapper">
+
+		<!-- START OF HEADER -->
+		<header>
+			<h1>AKA Theatre</h1>
+			<h2>Symphony sound in a (very) intimate space</h2>
+		</header>
+		
+		<div class="intro">
+			<p>
+				We look forward to hosting you at one of our upcoming performances.
+			</p>
+
+			<p>
+				To reserve your seat: Select the desired seat(s) and enter your name and email address. Click "Reserve" to finalize. You'll pay when you pick up your tickets.
+			</p>
+			<p>Available seats are colored in <span class="key-available">pearl</span>.</p>
+			<p>Occupied seats are highlighted in <span class="key-occupied">coral</span>.</p>
+			<p>Your selected seats will be highlighted in <span class="key-selected">teal</span>.</p>
+		</div>
+
+
+		<p id="warning">That seat is already taken!</p>
+
+		<div id="theatre">
+		<!-- START OF ROW F -->
+			<p class="rowlabel">Row F</p>
+			<div id="rowF">
+				<div id="seat1F" class="unavailable"></div>
+				<div id="seat2F" class="available"></div>
+				<div id="seat3F" class="unavailable"></div>
+				<div id="seat4F" class="unavailable"></div>
+			</div>
+
+		<!-- START OF ROW E -->	
+			<p class="rowlabel">Row E</p>
+			<div id="rowE">
+				<div id="seat1E" class="unavailable"></div>
+				<div id="seat2E" class="available"></div>
+				<div id="seat3E" class="available"></div>
+				<div id="seat4E" class="unavailable"></div>		
+			</div>
+
+		<!-- START OF ROW D -->	
+			<p class="rowlabel">Row D</p>
+			<div id="rowD">
+				<div id="seat1D" class="available"></div>
+				<div id="seat2D" class="unavailable"></div>
+				<div id="seat3D" class="unavailable"></div>
+				<div id="seat4D" class="available"></div>		
+			</div>
+
+		<!-- START OF ROW C -->	
+			<p class="rowlabel">Row C</p>
+			<div id="rowC">
+				<div id="seat1C" class="unavailable"></div>
+				<div id="seat2C" class="available"></div>
+				<div id="seat3C" class="available"></div>
+				<div id="seat4C" class="available"></div>			
+			</div>
+
+		<!-- START OF ROW B -->	
+			<p class="rowlabel">Row B</p>
+			<div id="rowB">
+				<div id="seat1B" class="available"></div>
+				<div id="seat2B" class="available"></div>
+				<div id="seat3B" class="unavailable"></div>
+				<div id="seat4B" class="unavailable"></div>			
+			</div>
+
+		<!-- START OF ROW A -->	
+			<p class="rowlabel">Row A</p>
+			<div id="rowA">
+				<div id="seat1A" class="unavailable"></div>
+				<div id="seat2A" class="unavailable"></div>
+				<div id="seat3A" class="available"></div>
+				<div id="seat4A" class="unavailable"></div>
+			</div>
+		</div>
+
+			<div id="stage"><p>Stage</p></div>
+
+		<!-- FORM -->
+
+	<div id="form" class="formStyle">
+  <form id="formEntry">
+    <input type="text" name="name" placeholder="Full Name (required)" id="name"/>
+    <input type="email" name="email" placeholder="Email address (required)" id="email" />
+    <textarea placeholder="Please leave any questions or comments here."></textarea>
+    <input type="button" value="RESERVE" id="button" />
+   
+
+	<input type="button" value="Reset Form" id="button2" onClick="this.form.reset()"/>
+	</form>
+
+
+    <p id="confirmation"></p>
+    <ul id="list"></ul>
+    
+  
+</div>
+
+		<!-- FOOTER -->
+		<footer>
+			<p>AKA Theatre | 2015</p>
+		</footer>
+	</div>
+
+	<script src="js/script.js"></script>
+	
+</body>
+</html>
+
+
+
+
